@@ -1,0 +1,35 @@
+<list>
+  <cliente>
+    <cpf>745</cpf>
+    <nome>Francisco Cuoco</nome>
+    <telefone>79685599</telefone>
+    <email>cuoco.f@mail.com</email>
+    <dataNascimento>1968-02-05 02:00:00.0 UTC</dataNascimento>
+    <cidade>Rio de Janeiro</cidade>
+    <estado>RJ</estado>
+    <bairro>Petropolis</bairro>
+    <endereco>Rua dos Jardins</endereco>
+  </cliente>
+  <cliente>
+    <cpf>300</cpf>
+    <nome>Joao das Dores</nome>
+    <telefone>98779988</telefone>
+    <email>dores.joao@may.com</email>
+    <dataNascimento>1965-05-09 03:00:00.0 UTC</dataNascimento>
+    <cidade>Brusque</cidade>
+    <estado>SC</estado>
+    <bairro>Santa Terezinha</bairro>
+    <endereco>Rod. Ivo Silveira</endereco>
+  </cliente>
+  <cliente>
+    <cpf>222</cpf>
+    <nome>Linus Torvalds</nome>
+    <telefone>55446644</telefone>
+    <email>trorva@mail</email>
+    <dataNascimento>1978-09-05 03:00:00.0 UTC</dataNascimento>
+    <cidade>Jardim Paulista</cidade>
+    <estado>SP</estado>
+    <bairro>Petrolandia</bairro>
+    <endereco>Petunias</endereco>
+  </cliente>
+</list>

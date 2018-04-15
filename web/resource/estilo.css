@@ -1,0 +1,292 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #ecf0f1;
+    font-family: Georgia, sans-serif;
+    font-size: 1vw; /* Define o tamanho da fonte de acordo com o dispositivo */
+    border-top: 8px solid #ffc600; /* Borda no topo da pagina */
+    color: #333;
+    border-bottom: 8px solid #ffc600;
+}
+
+.botao {
+    color: #f1f1f1;
+    text-decoration: none;
+    padding: 10px 30px;
+    background-color: #ffab1c;
+    font-size: 1vw;
+    border-radius: 5px;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+	@media (min-width: 960px) {
+		.container {
+			width: 960px;
+			padding: 0;
+		}
+	}
+
+/* Estilo do Header */
+.header {   
+}
+	.logo {
+		display: block;
+		width: 200px;
+		margin: 20px auto;
+		margin-top: 28px;    
+	}
+
+	.titulo-site {
+		width: 100%;
+		padding: 10px;
+		text-align: center;
+		font-size: 5vw;
+		text-transform: uppercase;
+	}
+
+		@media (min-width: 768px) {
+			.titulo-site {
+				font-size: 3vw;
+			}
+		}
+/* Estilo do Subtitulos */
+.sub-title {
+		width: 100%;
+		padding: 10px;
+		text-align: center;
+		font-size: 2.5vw;
+		text-transform: uppercase;
+	}
+
+		@media (min-width: 768px) {
+			.sub-title {
+				font-size: 1.5vw;
+			}
+		}                
+/* Estilo do formulario */
+.formControl {
+    box-sizing: border-box;
+    background-color: #ecf0f1;
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    margin: 10px auto;
+    padding-left: 40px;
+}
+/* Rotulo formulario */
+.formControl-label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+/* Campos formulario */
+.formControl-input {
+    padding: 12px;
+    background-color: #ffc600;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+/* Espacamento de preencimento da pagina */
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+/* Colunas */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/* Media Screen */
+@media screen and (max-width: 780px){
+    .col-25, .col-75, .botao {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+/* Botao do formulario */
+.formControl-Botao {
+    color: #333;
+    text-decoration: none;
+    padding: 10px 30px;
+    background-color: #ffc600;
+    font-size: 1.6vw;
+    border-radius: 5px;
+}
+/* Tratando as tabelas */
+.tabela {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin: 10px;
+}
+.tabela td, .tabela th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.tabela tr:hover {
+    background-color: #ddd;
+}
+/* Estilo do Footer */
+.rodape-site {
+		width: 100%;
+		padding: 10px;
+		text-align: center;
+		font-size: 2.5vw;
+		text-transform: uppercase;
+	}
+
+		@media (min-width: 768px) {
+			.rodape-site {
+				font-size: 1.5vw;
+			}
+		}
+
+/* Estilizando o menu de navegacao */
+/* Navegacao */
+.nav {
+        position: relative;
+        display: inline-block;
+        font-size: 1.6vw;
+        font-weight: 700;
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+	.nav-list {
+				
+	}
+
+	.nav-item {
+		float: left;
+		*display: inline;
+		zoom: 1;
+		list-style: none;
+	}
+
+		.nav-item a {
+			display: block;
+			padding: 15px 20px;
+			text-decoration: none;
+			color: #000;
+			background: #ffc600;
+		}
+
+			.nav-item:last-child a {
+				border-radius: 0 5px 5px 0;
+			}
+
+			.nav-item a:hover {
+				background: #ffab1c;
+			}
+
+/* Menu responsivo tags adicionadas no javascript */
+.nav-mobile {
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #ffc600;
+    border-radius: 5px;
+    line-height: 50px;
+    width: 100%;
+    height: 50px;
+}
+	.nav-mobile:after {
+		content: "↓ ABRIR MENU";
+	}
+
+	.nav-active {
+		display: block !important;
+		margin-top: 50px;
+	}
+
+	.nav-mobile-open {
+		border-radius: 5px 5px 0 0;
+	}
+
+		.nav-mobile-open:after {
+			content: "↑ FECHAR MENU";
+		}
+
+
+/* Menu Resposinvo */
+@media (max-width: 480px) {
+    .nav-item:first-child a {
+        border-radius: 0 !important;
+    }
+}
+
+@media (min-width: 480px) {
+    .nav-mobile {
+        left: 50%;
+        width: 300px;
+        margin-left: -150px;
+    }
+    
+    .nav-item:first-child a {
+        border-radius: 5px 0 5px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav {
+        font-size: 5vw;
+        min-height: 50px; 
+    }
+    .nav-list {
+        width: 100%;
+        display: none;
+    }
+    .nav-item {
+        width: 100%;
+        float: none;
+        border-top: 1px solid #ffcf00; 
+    }
+    .nav-item:first-child a {
+        border-radius: 5px 5px 0 0;
+    }
+    .nav-item:last-child a {
+        border-radius: 0 0 5px 5px;
+    }
+    /* Deixa o menu mobile visivel so para celulares e tablets */
+    .nav-mobile {
+        display: block;
+    }
+}
+
+
+#principal {
+    margin-top: 30px;
+}
+
+#principal p {
+    font-size: 3.5vw;
+    margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+    #principal p {
+        font-size: 1.6vw;
+    }
+}
